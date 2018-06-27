@@ -35,7 +35,7 @@ module PayuIndia #:nodoc:
           result << hidden_field_tag(field, value)
         end
 
-        result << '<input type="submit" value="Pay via Credit, Debit or Net Banking" class="payment_gateway_redirect_button_one">'
+        result << '<input type="submit" value="Pay" class="payment_gateway_redirect_button_one button button-success">'
         result << '</form>'
         result= result.join("\n")
 
