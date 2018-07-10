@@ -11,7 +11,6 @@ module PayuIndia
 
   def self.service_url
     defined?(Rails) && Rails.env == 'production' ? self.production_url : self.test_url
-    return self.test_url
   end
 
   def self.notification(post, options = {})
